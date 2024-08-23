@@ -1,0 +1,74 @@
+body {
+  background-image: radial-gradient(at center, #14281d #c2a878);
+}
+
+.title {
+  background-image: radial-gradient(at bottom, #63633d, #c2a878);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  border-bottom: dotted;
+  font-weight: bold;
+  margin-bottom: 17px;
+  border-width: 1px 1px 1px 1px;
+}
+
+.side-ed {
+  background-image: radial-gradient(at top, #c2a878, #63633d);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.work-experience {
+  background-image: radial-gradient(at bottom, #355834, #63633d);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.side-skills {
+  background-image: radial-gradient(at top, #63633d, #355834);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.projects {
+  background-image: radial-gradient(at bottom, #14281d, #355834);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.code-image {
+  background-image: radial-gradient(at bottom, #14281d, #355834);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.info h2 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.info h4 {
+  font-size: 20px;
+}
+
+#primary-container > div {
+  text-align: center;
+  padding: 20px;
+  border: #355834 dashed;
+}
+
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+  text-align: left;
+}
+
+h3 {
+  font-weight: bold;
+}

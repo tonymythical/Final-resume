@@ -1,0 +1,139 @@
+.title img {
+  width: 125px;
+  height: 125px;
+}
+
+.code-image img {
+  width: 408px;
+  height: 210px;
+}
+
+#primary-container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: fit-content;
+  height: 1039px;
+  margin: 0 auto;
+}
+
+#primary-container > .title,
+.info {
+  grid-column: 1 / span 10;
+  grid-row: 1 / span 1;
+}
+
+#primary-container > .work-experience {
+  grid-column: 1 / span 10;
+  grid-row: 2 / span 6;
+}
+
+#primary-container > .projects {
+  grid-column: 1 / span 10;
+  grid-row: 8 / span 3;
+}
+
+#primary-container > .side-ed {
+  grid-column: 11 / span 6;
+  grid-row: 1 / span 5;
+}
+
+#primary-container > .side-skills {
+  grid-column: 11 / span 6;
+  grid-row: 5 / span 4;
+}
+
+#primary-container > .code-image {
+  grid-column: 11 / span 6;
+  grid-row: 8 / span 3;
+}
+
+.title,
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+@media screen and (min-width: 960px) {
+  main {
+    display: grid;
+    grid-template-areas:
+      "title side-ed"
+      "work-experience side-ed"
+      "work-experience side-skills"
+      "projects code-image";
+  }
+
+  .code-image img {
+    max-width: fit-content;
+  }
+
+  body {
+    max-width: fit-content;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title side-ed"
+      "work-experience side-ed"
+      "work-experience side-skills"
+      "projects code-image";
+  }
+
+  .code-image img {
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  h3,
+  h4,
+  ul {
+    font-size: 15px;
+  }
+
+  .info h2,
+  .info h4 {
+    font-size: 20px;
+  }
+
+  .title img {
+    width: 50%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  li,
+  p {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title side-ed"
+      "work-experience side-ed"
+      "work-experience side-skills"
+      "projects code-image";
+  }
+
+  body {
+    height: 5px;
+  }
+}
